@@ -20,13 +20,13 @@ public class TestRun {
 		driver = Dlib.openBrowser("chrome");
 		lib = new LibraryForGenericFunction(driver);
 		// Application link will be opened
-		driver.get("http://10.244.30.178:8080/YouthInc/frontend/web/youthinc-ui/");
+		driver.get("http://52.172.33.72:8080/ServicePortal");
 	}
 
 	@Test(priority = 1, description="Performs an unsuccessful login and checks the resulting error message (passes)")
 	public void unsuccessfullogin() throws InterruptedException, IOException {
-		lib.jsSendKeysForID("username", "1234", "login", "ID");
-		lib.jsSendKeysForID("password", "1234", "login", "ID");
+		lib.jsSendKeysForID("uname", "anand", "login", "ID");
+		lib.jsSendKeysForID("pass", "123456", "login", "ID");
 		Assert.assertTrue(lib.waitAndClickForID("login", "login", "ID"));
 		Thread.sleep(2000);
 		Assert.assertTrue(lib.getText("error", "login", "ID").contains("login fail"));					
@@ -34,12 +34,12 @@ public class TestRun {
 	
 	@Test(priority = 2, description="Performs an successful login and checks the dashboard url (passes)")
 	public void login() throws InterruptedException, IOException {
-		lib.jsSendKeysForID("username", "", "", "");
-		lib.jsSendKeysForID("password", "", "", "");
+		lib.jsSendKeysForID("username", "anand", "login", "ID");
+		lib.jsSendKeysForID("password", "1234", "login", "ID");
 		Assert.assertTrue(lib.waitAndClickForID("login", "login", "ID"));
 		Thread.sleep(2000);
 		Assert.assertEquals(lib.getCurrentUrl(), "\r\n" + 
-				"http://10.244.30.178:8080/YouthInc/frontend/web/youthinc-ui/elements.html");					
+				"http://52.172.33.72:8080/ServicePortal/success.jsp");					
 	}
 	
 	@Test(priority = 3, description="Logs out (passes)")

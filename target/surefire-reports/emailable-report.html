@@ -31,45 +31,29 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Test</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">6</td><td class="numi">22.4 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Test</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">3</td><td class="numi">0</td><td class="numi">5.7 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">Test &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="6">com.pack.home.TestExecution.TestRun</td><td><a href="#m1"><b>unsuccessfullogin</b>  ("Performs an unsuccessful login and checks the resulting error message (passes)")</a></td><td class="numi">1</td><td>1505316995604</td><td class="numi">1135</td></tr><tr class="failedodd"><td><a href="#m2"><b>login</b>  ("Performs an successful login and checks the dashboard url (passes)")</a></td><td class="numi">1</td><td>1505316996758</td><td class="numi">1018</td></tr><tr class="failedodd"><td><a href="#m3"><b>verifyWelcomeMesg</b>  ("Checks for the welcome message (passes)")</a></td><td class="numi">1</td><td>1505316997776</td><td class="numi">56</td></tr><tr class="failedodd"><td><a href="#m4"><b>clickPayment</b>  ("Tries to navigate to Make Payment (fails)")</a></td><td class="numi">1</td><td>1505316997842</td><td class="numi">1038</td></tr><tr class="failedodd"><td><a href="#m5"><b>clickProfile</b>  ("Navigates to Profile page (passes)")</a></td><td class="numi">1</td><td>1505316998881</td><td class="numi">1049</td></tr><tr class="failedodd"><td><a href="#m6"><b>logout</b>  ("Logs out (passes)")</a></td><td class="numi">1</td><td>1505316999931</td><td class="numi">2666</td></tr>
+<tr><th colspan="4">Test &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td rowspan="1">com.pack.home.TestExecution.TestRun</td><td><a href="#m1"><b>executing</b>  </a></td><td class="numi">1</td><td>1519902335028</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Test &#8212; skipped (configuration methods)</th></tr>
+<tr class="skippedodd"><td rowspan="1">com.pack.home.TestExecution.TestRun</td><td><a href="#m2"><b>afterMethod</b>  </a></td><td class="numi">1</td><td>1519902340766</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Test &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="3">com.pack.home.TestExecution.TestRun</td><td><a href="#m3"><b>unsuccessfullogin</b>  ("Performs an unsuccessful login and checks the resulting error message (passes)")</a></td><td class="numi">1</td><td>1519902340758</td><td class="numi">5</td></tr><tr class="skippedodd"><td><a href="#m4"><b>login</b>  ("Performs an successful login and checks the dashboard url (passes)")</a></td><td class="numi">1</td><td>1519902340764</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m5"><b>logout</b>  ("Logs out (passes)")</a></td><td class="numi">1</td><td>1519902340765</td><td class="numi">0</td></tr>
 </table>
 <h1>Test</h1>
-<h2 id="m1">com.pack.home.TestExecution.TestRun:clickProfile</h2>
+<h2 id="m1">com.pack.home.TestExecution.TestRun:executing</h2>
 <div style="padding-left:3em">
-<p>Element not found</p>
-org.testng.Assert.fail(Assert.java:94)
-<br/>at com.pack.home.Libraries.LibraryForGenericFunction.waitAndClickForID(LibraryForGenericFunction.java:72)
-<br/>at com.pack.home.TestExecution.TestRun.clickProfile(TestRun.java:56)
-<br/>28 lines not shown
-</div>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">com.pack.home.TestExecution.TestRun:clickPayment</h2>
-<div style="padding-left:3em">
-<p>Element not found</p>
-org.testng.Assert.fail(Assert.java:94)
-<br/>at com.pack.home.Libraries.LibraryForGenericFunction.waitAndClickForID(LibraryForGenericFunction.java:72)
-<br/>at com.pack.home.TestExecution.TestRun.clickPayment(TestRun.java:51)
-<br/>28 lines not shown
-</div>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m3">com.pack.home.TestExecution.TestRun:verifyWelcomeMesg</h2>
-<div style="padding-left:3em">
-<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;class name&quot;,&quot;selector&quot;:&quot;currentBillFontforiPhone5&quot;}
-  (Session info: chrome=60.0.3112.113)
-  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 50 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+<p>disconnected: unable to connect to renderer
+  (Session info: chrome=64.0.3282.186)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.06 seconds
 Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
-System info: host: &apos;DESKTOP-UTJTOH1&apos;, ip: &apos;192.168.99.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+System info: host: &apos;WINDOWS-BQKBTT7&apos;, ip: &apos;192.168.99.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_102&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\ANAND\AppData\Local\Temp\scoped_dir8156_18974}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.113, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
-Session ID: 8bfa5f881a3519712a4084985867d04f
-*** Element info: {Using=class name, value=currentBillFontforiPhone5}</p>
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\siddu\AppData\Local\Temp\scoped_dir12008_20633}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=64.0.3282.186, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: c8a4fbf367bc29abb63fffa59340b126</p>
 sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 <br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 <br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -77,40 +61,19 @@ sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 <br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
 <br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
 <br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:457)
-<br/>at org.openqa.selenium.By$ByClassName.findElement(By.java:391)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-<br/>at com.pack.home.Libraries.LibraryForGenericFunction.getText(LibraryForGenericFunction.java:130)
-<br/>at com.pack.home.TestExecution.TestRun.verifyWelcomeMesg(TestRun.java:46)
-<br/>28 lines not shown
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:658)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:882)
+<br/>at com.pack.home.Libraries.DriverLaunch.openBrowser(DriverLaunch.java:40)
+<br/>at com.pack.home.TestExecution.TestRun.executing(TestRun.java:20)
+<br/>26 lines not shown
 </div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m4">com.pack.home.TestExecution.TestRun:unsuccessfullogin</h2>
-<div style="padding-left:3em">
-<p>Element not found</p>
-org.testng.Assert.fail(Assert.java:94)
-<br/>at com.pack.home.Libraries.LibraryForGenericFunction.jsSendKeysForID(LibraryForGenericFunction.java:118)
-<br/>at com.pack.home.TestExecution.TestRun.unsuccessfullogin(TestRun.java:28)
-<br/>28 lines not shown
-</div>
+<h2 id="m2">com.pack.home.TestExecution.TestRun:afterMethod</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m5">com.pack.home.TestExecution.TestRun:login</h2>
-<div style="padding-left:3em">
-<p>Element not found</p>
-org.testng.Assert.fail(Assert.java:94)
-<br/>at com.pack.home.Libraries.LibraryForGenericFunction.jsSendKeysForID(LibraryForGenericFunction.java:118)
-<br/>at com.pack.home.TestExecution.TestRun.login(TestRun.java:37)
-<br/>28 lines not shown
-</div>
+<h2 id="m3">com.pack.home.TestExecution.TestRun:login</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m6">com.pack.home.TestExecution.TestRun:logout</h2>
-<div style="padding-left:3em">
-<p>Element not found</p>
-org.testng.Assert.fail(Assert.java:94)
-<br/>at com.pack.home.Libraries.LibraryForGenericFunction.waitAndClickForID(LibraryForGenericFunction.java:72)
-<br/>at com.pack.home.TestExecution.TestRun.logout(TestRun.java:61)
-<br/>28 lines not shown
-</div>
+<h2 id="m4">com.pack.home.TestExecution.TestRun:logout</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">com.pack.home.TestExecution.TestRun:unsuccessfullogin</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

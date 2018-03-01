@@ -12,9 +12,9 @@ public class ExtentManager {
 			extent = new ExtentReports(System.getProperty("user.dir") + "/test-output/ZenoExtentReport.html", true);
 			extent.loadConfig(new File(System.getProperty("user.dir") + "\\extent-config.xml"));
 			extent
-			.addSystemInfo("Host Name", "http://10.244.30.178:8080/YouthInc/frontend/web/youthinc-ui/s")
+			.addSystemInfo("Host Name", "http://52.172.33.72:8080/ServicePortal")
 			.addSystemInfo("Environment", "DEMO")
-			.addSystemInfo("Application", "Zeno");
+			.addSystemInfo("Application", "Service Portal");
 		}
 		return extent;
 	}

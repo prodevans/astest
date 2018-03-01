@@ -3,6 +3,7 @@ package com.pack.home.Libraries;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
@@ -21,6 +22,8 @@ public class DriverLaunch {
 			} else if (browser.equalsIgnoreCase("chrome")) {
 				System.out.println("Selected browser is Chrome");
 				detectOS();
+				ChromeOptions chromeoptions= new ChromeOptions();
+				chromeoptions.addArguments("headless");
 				driver = new ChromeDriver();
 			} else if (browser.equalsIgnoreCase("IE")) {
 				System.out.println("Selected browser is Internet Explorer");
